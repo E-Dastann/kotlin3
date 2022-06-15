@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/PhotoFragment">
+
+    <fragment
+        android:id="@+id/PhotoFragment"
+        android:name="com.example.kotlin3.ui.fragments.PhotoFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_photo" >
+        <action
+            android:id="@+id/action_PhotoFragment_to_selectedFragment"
+            app:destination="@id/selectedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectedFragment"
+        android:name="com.example.kotlin3.ui.fragments.SelectedFragment"
+        android:label="fragment_selected"
+        tools:layout="@layout/fragment_selected" />
+</navigation>
